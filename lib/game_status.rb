@@ -10,7 +10,6 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  # winningCombo = nil
   WIN_COMBINATIONS.each { |combo|
     o_combo = combo.select { |i| board[i] == "O" }
     x_combo = combo.select { |i| board[i] == "X" }
@@ -29,5 +28,5 @@ def draw?(board)
     return true
   elsif won?(board)
     return false
-  end    
+  end
 end
