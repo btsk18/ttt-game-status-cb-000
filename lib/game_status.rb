@@ -34,3 +34,8 @@ end
 def over?(board)
   return true if won?(board) or draw?(board)
 end
+
+def winner(board)
+  win_combo = won?(board)
+  return board[win_combo.first] if win_combo.class == Array
+end
