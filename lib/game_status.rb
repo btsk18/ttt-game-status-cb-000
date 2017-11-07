@@ -21,5 +21,5 @@ def won?(board)
 end
 
 def full?(board)
-  return board.reject { |e| e == " "  }
+  return board.all? { |e| e != " "  }
 end
